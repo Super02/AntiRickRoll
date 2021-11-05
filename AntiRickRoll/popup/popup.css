@@ -15,8 +15,6 @@
     vertical-align: middle;
 }
 
-
-
 #toggler {
     transition: ease 100ms;
     width: 100%;
@@ -31,4 +29,21 @@
 #toggler:hover {
     transition: ease 100ms;
     background-color: #aaa;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --google-gray-dark: rgb(155, 160, 165);
+        background: #202124;
+        color: var(--google-gray-dark);
+    }
+    .brand {
+        color: rgb(255, 255, 255)
+    }
+    #toggler {
+        background: rgb(161, 161, 161);
+    }
+    #toggler:hover {
+        background-color: rgb(202, 202, 202);
+    }
 }
